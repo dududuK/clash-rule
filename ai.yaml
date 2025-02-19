@@ -162,8 +162,8 @@ payload:
   - DOMAIN-SUFFIX,jasper.ai
 
   # > Meta AI
+  - DOMAIN,imagine.meta.com
   - DOMAIN-SUFFIX,meta.ai
-
   # > OpenArt
   - DOMAIN-SUFFIX,openart.ai
 
