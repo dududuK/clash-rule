@@ -47,9 +47,9 @@ payload:
   - DOMAIN-SUFFIX,stripe.com
   - DOMAIN-SUFFIX,turn.livekit.cloud
   - DOMAIN-KEYWORD,openai
-  - IP-CIDR,24.199.123.28/32
-  - IP-CIDR,64.23.132.171/32
-  - IP-ASN,20473
+  - IP-CIDR,24.199.123.28/32,no-resolve
+  - IP-CIDR,64.23.132.171/32,no-resolve
+  - IP-ASN,20473,no-resolve
 
   # > Chat GPT API & CDN
   - DOMAIN,chat.openai.com.cdn.cloudflare.net
@@ -67,7 +67,8 @@ payload:
   - DOMAIN-SUFFIX,anthropic.com
   - DOMAIN-SUFFIX,claude.ai
   - DOMAIN-SUFFIX,claudeusercontent.com
-
+  - IP-CIDR,160.79.104.0/23,no-resolve
+  - IP-CIDR6,2607:6bc0::/48,no-resolve
   # > Cloudflare AI Gateway
   - DOMAIN,gateway.ai.cloudflare.com
 
@@ -119,10 +120,10 @@ payload:
   - DOMAIN-SUFFIX,stripe.com
   - DOMAIN-SUFFIX,turn.livekit.cloud
   - DOMAIN-KEYWORD,openaicom-api
-  - IP-CIDR,24.199.123.28/32
-  - IP-CIDR,64.23.132.171/32
-  - IP-ASN,14061
-  - IP-ASN,20473
+  - IP-CIDR,24.199.123.28/32,no-resolve
+  - IP-CIDR,64.23.132.171/32,no-resolve
+  - IP-ASN,14061,no-resolve
+  - IP-ASN,20473,no-resolve
 
   # > Dify.AI
   - DOMAIN-SUFFIX,dify.ai
@@ -180,3 +181,8 @@ payload:
   # > Sora
   - DOMAIN-SUFFIX,sora.com
   - DOMAIN,sora-cdn.oaistatic.com
+
+  # JetBrains AI
+  - DOMAIN-SUFFIX,grazie.ai
+  - DOMAIN-SUFFIX,grazie.aws.intellij.net
+  
